@@ -18,14 +18,19 @@ Feature: Logger
     And I click "Submit"
     Then I should see "You have signed up successfully."
 
-  @javascript
   Scenario: Signing up unsuccessfully
     Given I am on the homepage
     And I click "Sign up"
     When I fill in the sign up form without a password
     And I click "Submit"
     Then I should see "Password can't be blank"
-    And I should still be in the homepage
+
+  @javascript
+  Scenario: Signing in unsuccessfully
+    Given I am on the homepage
+    When I click "Sign in"
+    And I input the wrong credentials
+    Then I should see "Cannot authenticate"
 
   Scenario: Log count
     Given I have signed up successfully

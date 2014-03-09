@@ -8,7 +8,6 @@ $(function() {
     });
     event.preventDefault();
   });
-  
 });
 
 
@@ -22,12 +21,21 @@ $(function() {
 //   });
 // });
 
-// $(function () {
-//   var form = $('#ajax-form form');
-//     $.ajax({
-//       url: form.attr('action'),
-//       method: 'POST',
-//       data: form.serialize(),
-//     });
-// });
+$(function() {
+  var form = $('#sign-in-form form');
+  form.submit(function(event) {
+    $.ajax({
+      url: form.attr('action'),
+      method: 'POST',
+      data: form.serialize(),
+      success: function() {
+        location.href = "/"
+      },
+      error: function() { 
+        $('#sign-in-form').prepend("Cannot authenticate.");
+      }
+    });
+    event.preventDefault();
+  });
+});
 

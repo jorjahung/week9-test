@@ -25,6 +25,13 @@ When(/^I fill in the sign up form without a password$/) do
   fill_in('user[email]', with: "test@test.com")
 end
 
+When(/^I input the wrong credentials$/) do
+  fill_in('user[email]', with: "test@test.com")
+  fill_in('user[password]', with: "test")
+  click_button('Sign in')
+end
+
+
 When(/^I go to the log in count page$/) do
   visit counter_path
 end
