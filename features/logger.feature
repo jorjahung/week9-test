@@ -33,3 +33,8 @@ Feature: Logger
   Scenario: Redirecting to log count
     Given I have signed up successfully
     Then I should be in the log in counter
+
+  Scenario: Signing out
+    Given I have signed up successfully
+    When I click "Sign out"
+    Then I should see "Goodbye!"
