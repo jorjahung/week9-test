@@ -1,3 +1,60 @@
 // Place all the styles related to the Logger controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-align: center;
+  font-size: 1em;
+}
+
+h1,h2 {
+  font-family: 'Stalinist One', cursive;
+  margin: .2em;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 1em;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 1em;
+}
+
+p {
+  margin: 1em;
+}
+#menu {
+  margin: 2em;
+}
+
+a {
+  font-size: 1.2em;
+  color: white;
+  background-color: gray;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: .4em;
+  margin: 1em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+#ajax-form {
+  width: 50%;
+  font-size: 1.2em;
+  color: white;
+  background-color: gray;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: .4em;
+  margin: 1.5em auto;
+}
