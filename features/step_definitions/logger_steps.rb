@@ -42,6 +42,10 @@ Then(/^the form should appear on the home page$/) do
   expect(page).to have_content("Sign up to Logger")
 end
 
+Then(/^I should still be in the homepage$/) do
+  expect(current_path).to eq(root_path)
+end
+
 Then(/^I should see "(.*?)"$/) do |message|
   expect(page).to have_content(message)
 end

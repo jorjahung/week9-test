@@ -8,5 +8,26 @@ $(function() {
     });
     event.preventDefault();
   });
+  
 });
+
+
+// $(function () {
+//   var form = $('#ajax-form form');
+//     form.submit(function(event) {
+//       var data = form.serialize();
+//       $.post(form.attr('action'), data);
+//       event.preventDefault();
+//       console.log(data);   
+//   });
+// });
+
+// $(function () {
+//   var form = $('#ajax-form form');
+//     $.ajax({
+//       url: form.attr('action'),
+//       method: 'POST',
+//       data: form.serialize(),
+//     });
+// });
 
