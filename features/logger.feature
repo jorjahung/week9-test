@@ -24,3 +24,8 @@ Feature: Logger
     When I fill in the sign up form without a password
     And I click "Submit"
     Then I should see "Password can't be blank"
+
+  Scenario: Log count
+    Given I have signed up successfully
+    When I go to the log count page
+    Then I should see the times I have been signed in

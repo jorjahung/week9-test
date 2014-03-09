@@ -1,0 +1,7 @@
+<%= @user.email %> have been logged in: 
+  <h1><%= @user.sign_in_count %></h1> 
+<% if @user.sign_in_count == 1 %>
+  <h2>time</h2>
+<% else %>
+  <h2>times</h2>
+<%end%>
