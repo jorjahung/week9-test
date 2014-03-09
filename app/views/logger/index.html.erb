@@ -1,4 +1,9 @@
+<header>
 <h1>Welcome to Logger!</h1>
 <p>This app keeps count of how many times you have logged into Logger</p>
-<%= link_to 'Sign in', new_user_session_path %> 
-<%= link_to 'Sign up', new_user_registration_path %> 
+</header>
+
+<section id="menu">
+  <%= link_to 'Sign in', new_user_session_path, id:"sign-in" %> 
+  <%= link_to 'Sign up', new_user_registration_path, id:"sign-up" %> 
+</section>
