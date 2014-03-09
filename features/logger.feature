@@ -27,5 +27,9 @@ Feature: Logger
 
   Scenario: Log count
     Given I have signed up successfully
-    When I go to the log count page
+    When I go to the log in count page
     Then I should see the times I have been signed in
+
+  Scenario: Redirecting to log count
+    Given I have signed up successfully
+    Then I should be in the log in counter

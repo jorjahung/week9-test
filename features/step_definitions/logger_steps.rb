@@ -25,7 +25,7 @@ When(/^I fill in the sign up form without a password$/) do
   fill_in('user[email]', with: "test@test.com")
 end
 
-When(/^I go to the log count page$/) do
+When(/^I go to the log in count page$/) do
   visit counter_path
 end
 
@@ -49,5 +49,9 @@ end
 Then(/^I should see the times I have been signed in$/) do
   expect(page).to have_content("test@test.com")
   expect(page).to have_content("1 time")
+end
+
+Then(/^I should be in the log in counter$/) do
+  expect(current_path).to eq(counter_path)
 end
 
