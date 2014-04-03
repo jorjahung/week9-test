@@ -22,5 +22,8 @@ A Rails app that allows the user to keep the count of how many times they logged
 
 Deployed to Heroku: http://signinlogger.herokuapp.com
 
+Sign in page:
 ![alt text](https://raw.githubusercontent.com/jorjahung/week9-test-logger/master/screenshot.png "Logger")
+
+Logger:
 ![alt text](https://raw.githubusercontent.com/jorjahung/week9-test-logger/master/screenshot2.png "Logger")
